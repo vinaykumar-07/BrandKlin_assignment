@@ -7,7 +7,6 @@ class CarModel extends StatelessWidget {
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
-    
 
     return Container(
       decoration: BoxDecoration(
@@ -68,7 +67,8 @@ class CarModel extends StatelessWidget {
             width: width * .44,
             margin: const EdgeInsets.only(top: 0),
             decoration: const BoxDecoration(
-                image: DecorationImage(fit: BoxFit.cover,
+                image: DecorationImage(
+                    fit: BoxFit.cover,
                     image: AssetImage('assets/images/img.jpg'))),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -81,7 +81,6 @@ class CarModel extends StatelessWidget {
                     onPressed: () {},
                     child: const Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      
                       children: [
                         Text(
                           "4.1",
@@ -95,7 +94,7 @@ class CarModel extends StatelessWidget {
               ],
             ),
           ),
-         
+
           const Text(
             "Mercedes-Benze",
             style: TextStyle(
@@ -116,164 +115,294 @@ class CarModel extends StatelessWidget {
           ),
           const SizedBox(height: 5),
           const Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                
+              Column(
                 children: [
-                  Icon(Icons.airline_seat_recline_normal_sharp),
-                  Column(
-                     crossAxisAlignment: CrossAxisAlignment.center,
+                  Row(
                     children: [
-                      Text(
-                        "5,6,7",
-                        style: TextStyle(
-                          fontSize: 12,
-                          decoration: TextDecoration.none,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
+                      Icon(Icons.airline_seat_recline_normal_sharp),
+                      Column(
+                        children: [
+                          Text(
+                            "5,6,7",
+                            style: TextStyle(
+                              fontSize: 12,
+                              decoration: TextDecoration.none,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text(
+                            "Seater",
+                            style: TextStyle(
+                              fontSize: 12,
+                              decoration: TextDecoration.none,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
                       ),
-                      Text(
-                        "Seater",
-                        style: TextStyle(
-                          fontSize: 12,
-                          decoration: TextDecoration.none,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
+                    ],
+                  ),
+                  SizedBox(height: 10),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Icon(Icons.ev_station_outlined),
+                      Column(
+                        children: [
+                          Text(
+                            "petrol",
+                            style: TextStyle(
+                              fontSize: 12,
+                              decoration: TextDecoration.none,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text(
+                            "petrol",
+                            style: TextStyle(
+                              fontSize: 12,
+                              decoration: TextDecoration.none,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text(
+                            "petrol",
+                            style: TextStyle(
+                              fontSize: 12,
+                              decoration: TextDecoration.none,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text(
+                            "petrol",
+                            style: TextStyle(
+                              fontSize: 12,
+                              decoration: TextDecoration.none,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
                 ],
               ),
-              SizedBox(width: 10),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              SizedBox(width: 40),
+              Column(
                 children: [
-                  Icon(Icons.airline_seat_recline_normal_sharp),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  Row(
                     children: [
-                      Text(
-                        "5,6,7",
-                        style: TextStyle(
-                          fontSize: 12,
-                          decoration: TextDecoration.none,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
+                      Icon(Icons.airline_seat_recline_normal_sharp),
+                      Column(
+                        children: [
+                          Text(
+                            "5,6,7",
+                            style: TextStyle(
+                              fontSize: 12,
+                              decoration: TextDecoration.none,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text(
+                            "Seater",
+                            style: TextStyle(
+                              fontSize: 12,
+                              decoration: TextDecoration.none,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
                       ),
-                      Text(
-                        "Seater",
-                        style: TextStyle(
-                          fontSize: 12,
-                          decoration: TextDecoration.none,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
+                    ],
+                  ),
+                  const SizedBox(height: 10),
+                  Row(
+                    children: [
+                      Icon(Icons.ev_station_outlined),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Text(
+                            "petrol",
+                            style: TextStyle(
+                              fontSize: 12,
+                              decoration: TextDecoration.none,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text(
+                            "petrol",
+                            style: TextStyle(
+                              fontSize: 12,
+                              decoration: TextDecoration.none,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text(
+                            "petrol",
+                            style: TextStyle(
+                              fontSize: 12,
+                              decoration: TextDecoration.none,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text(
+                            "petrol",
+                            style: TextStyle(
+                              fontSize: 12,
+                              decoration: TextDecoration.none,
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
                 ],
               ),
-            ],
-          ),
-          const SizedBox(height: 5),
-          const Row(
-            children: [
-              Row( 
-                 children: [
-                  Icon(Icons.ev_station_outlined),
-                  Column(crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      Text(
-                        "petrol",
-                        style: TextStyle(
-                          fontSize: 12,
-                          decoration: TextDecoration.none,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      Text(
-                        "petrol",
-                        style: TextStyle(
-                          fontSize: 12,
-                          decoration: TextDecoration.none,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      Text(
-                        "petrol",
-                        style: TextStyle(
-                          fontSize: 12,
-                          decoration: TextDecoration.none,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      Text(
-                        "petrol",
-                        style: TextStyle(
-                          fontSize: 12,
-                          decoration: TextDecoration.none,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-              SizedBox(width: 10),
-              Row(
-                children: [
-                  Icon(Icons.ev_station_outlined),
-                  Column(
-                    children: [
-                      Text(
-                        "petrol",
-                        style: TextStyle(
-                          fontSize: 12,
-                          decoration: TextDecoration.none,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      Text(
-                        "petrol",
-                        style: TextStyle(
-                          fontSize: 12,
-                          decoration: TextDecoration.none,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      Text(
-                        "petrol",
-                        style: TextStyle(
-                          fontSize: 12,
-                          decoration: TextDecoration.none,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      Text(
-                        "petrol",
-                        style: TextStyle(
-                          fontSize: 12,
-                          decoration: TextDecoration.none,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
+
+              //     SizedBox(width: 10),
+              //     Row(
+              //       crossAxisAlignment: CrossAxisAlignment.center,
+              //       // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //       children: [
+              //         Icon(Icons.airline_seat_recline_normal_sharp),
+              //         Column(
+              //           mainAxisAlignment: MainAxisAlignment.spaceAround,
+              //           children: [
+              //             Text(
+              //               "5,6,7",
+              //               style: TextStyle(
+              //                 fontSize: 12,
+              //                 decoration: TextDecoration.none,
+              //                 color: Colors.black,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //             Text(
+              //               "Seater",
+              //               style: TextStyle(
+              //                 fontSize: 12,
+              //                 decoration: TextDecoration.none,
+              //                 color: Colors.black,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //           ],
+              //         ),
+              //       ],
+              //     ),
+              //   ],
+              // ),
+              // const SizedBox(height: 5),
+              // const Row(
+              //   children: [
+              //     Row(
+              //       children: [
+              //         Icon(Icons.ev_station_outlined),
+              //         Column(
+              //           crossAxisAlignment: CrossAxisAlignment.end,
+              //           children: [
+              //             Text(
+              //               "petrol",
+              //               style: TextStyle(
+              //                 fontSize: 12,
+              //                 decoration: TextDecoration.none,
+              //                 color: Colors.black,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //             Text(
+              //               "petrol",
+              //               style: TextStyle(
+              //                 fontSize: 12,
+              //                 decoration: TextDecoration.none,
+              //                 color: Colors.black,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //             Text(
+              //               "petrol",
+              //               style: TextStyle(
+              //                 fontSize: 12,
+              //                 decoration: TextDecoration.none,
+              //                 color: Colors.black,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //             Text(
+              //               "petrol",
+              //               style: TextStyle(
+              //                 fontSize: 12,
+              //                 decoration: TextDecoration.none,
+              //                 color: Colors.black,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //           ],
+              //         ),
+              //       ],
+              //     ),
+              //     SizedBox(width: 10),
+              //     Row(
+              //       children: [
+              //         Icon(Icons.ev_station_outlined),
+              //         Column(
+              //           children: [
+              //             Text(
+              //               "petrol",
+              //               style: TextStyle(
+              //                 fontSize: 12,
+              //                 decoration: TextDecoration.none,
+              //                 color: Colors.black,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //             Text(
+              //               "petrol",
+              //               style: TextStyle(
+              //                 fontSize: 12,
+              //                 decoration: TextDecoration.none,
+              //                 color: Colors.black,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //             Text(
+              //               "petrol",
+              //               style: TextStyle(
+              //                 fontSize: 12,
+              //                 decoration: TextDecoration.none,
+              //                 color: Colors.black,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //             Text(
+              //               "petrol",
+              //               style: TextStyle(
+              //                 fontSize: 12,
+              //                 decoration: TextDecoration.none,
+              //                 color: Colors.black,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //           ],
+              //         ),
+              //       ],
+              //     ),
             ],
           ),
         ],

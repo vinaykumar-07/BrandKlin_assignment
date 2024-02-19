@@ -12,7 +12,7 @@ class MainPage extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     return SingleChildScrollView(
       child: Container(
-        padding: const EdgeInsets.all(10),
+        // padding: const EdgeInsets.all(10),
         color: Colors.white,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -45,14 +45,16 @@ class MainPage extends StatelessWidget {
                 ],
               ),
             ),
-            
-            
             Container(
               padding: EdgeInsets.only(left: height * .01, right: height * .01),
               height: height * .28,
               width: width * 1,
-              child: Image.asset('assets/images/img.jpg',fit: BoxFit.cover,),
+              child: Image.asset(
+                'assets/images/img.jpg',
+                fit: BoxFit.cover,
+              ),
             ),
+            const SizedBox(height: 10),
             Container(
               // height: 250,
               width: double.infinity,
@@ -62,6 +64,7 @@ class MainPage extends StatelessWidget {
                     text: "FIND YOUR PERFECT CAR",
                     color: Colors.red,
                   ),
+                  const SizedBox(height: 10),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
@@ -91,6 +94,7 @@ class MainPage extends StatelessWidget {
                           )),
                     ],
                   ),
+                  const SizedBox(height: 10),
                   Container(
                     color: Colors.grey,
                     padding: EdgeInsets.only(
@@ -114,6 +118,7 @@ class MainPage extends StatelessWidget {
                 ],
               ),
             ),
+            const SizedBox(height: 10),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
@@ -152,6 +157,7 @@ class MainPage extends StatelessWidget {
                 ],
               ),
             ),
+            const SizedBox(height: 10),
             const Row(
               // mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -184,7 +190,10 @@ class MainPage extends StatelessWidget {
                   height: 80,
                   width: 100,
                   color: Colors.green,
-                  child: Image.asset('assets/images/whats_up.png',fit: BoxFit.cover,),
+                  child: Image.asset(
+                    'assets/images/whats_up.png',
+                    fit: BoxFit.cover,
+                  ),
                 )
               ],
             ),
@@ -202,7 +211,8 @@ class MainPage extends StatelessWidget {
               // margin: EdgeInsets.only(bottom: 10),
               width: width,
               decoration: const BoxDecoration(
-                  image: DecorationImage(fit: BoxFit.cover,
+                  image: DecorationImage(
+                      fit: BoxFit.cover,
                       image: AssetImage('assets/images/car.jpg'))),
             ),
             const BigText(text: "BROWSE BY BRAND"),
@@ -246,7 +256,8 @@ class MainPage extends StatelessWidget {
                 ),
               ],
             ),
-            const Row( mainAxisAlignment: MainAxisAlignment.end,
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 BigText(text: "LOAD MORE"),
               ],
@@ -257,7 +268,8 @@ class MainPage extends StatelessWidget {
               // margin: EdgeInsets.only(bottom: 10),
               width: width,
               decoration: const BoxDecoration(
-                  image: DecorationImage(fit: BoxFit.cover,
+                  image: DecorationImage(
+                      fit: BoxFit.cover,
                       image: AssetImage('assets/images/car1.png'))),
             ),
             const SizedBox(height: 500),
